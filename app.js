@@ -1,3 +1,4 @@
+//Configuro el servidor
 const http = require('http');
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -6,6 +7,7 @@ res.statusCode = 200;
 res.setHeader('Content-Type', 'application/json');
 res.end('{ "mensaje": "Hola Mundo!!"}');
 });
+//Inicializo el servidor
 server.listen(port, hostname, () => {
 console.log(`Server running at http://${hostname}:${port}/`);
 });
